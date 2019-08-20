@@ -9,7 +9,7 @@ Unfortunately, you would like such a library to be defined in terms of generic t
 not yet support generic types. So this build includes a solidity task to generate specializations of
 the library for specific types. They get generated (perhaps awkwardly) into `src/main/solidity`.
 
-### Examples
+### Generation Examples
 
 This command generated `AddressAddressKeyIterableMapping`:
 
@@ -29,6 +29,10 @@ argument to `generateKeyIterableMapping`. This command generated `UInt256UInt256
 > generateKeyIterableMapping uint256 uint256 UInt256UInt256KeyIterableMapping
 [success] Total time: 0 s, completed Aug 19, 2019 10:10:12 PM
 ```
+
+### Use examples
+
+To see an example of a generated library in use, try [here](src/test/solidity/KeyIterableMappingHolder.sol).
 
 ### Template
 
