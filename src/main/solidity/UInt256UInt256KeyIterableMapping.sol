@@ -1,6 +1,6 @@
 pragma solidity ^0.5.7; 
 
-library KeyIterableMapping {
+library UInt256UInt256KeyIterableMapping {
   struct Record {
     bool    exists; // this feels like a waste of storage...
     uint256 index;
@@ -8,7 +8,7 @@ library KeyIterableMapping {
   }
   struct Store {
     mapping(uint256=>Record) map;
-    uint256[]                keys;
+    uint256[]                  keys;
   }
   function keyCount( Store storage store ) internal view returns ( uint256 count ) {
     count = store.keys.length;

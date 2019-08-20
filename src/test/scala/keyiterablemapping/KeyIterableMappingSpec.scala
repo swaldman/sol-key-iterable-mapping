@@ -8,7 +8,7 @@ import com.mchange.sc.v1.consuela.ethereum.stub.sol
 import keyiterablemapping.contract._
 import Testing._
 
-class UInt256UInt256KeyIterableMappingSpec extends Specification with AutoSender { def is = sequential ^ s2"""
+class KeyIterableMappingSpec extends Specification with AutoSender { def is = sequential ^ s2"""
    A KeyIterableMapping...
       starts out empty                                      ${e0}
       after one put has size one                            ${e1}
