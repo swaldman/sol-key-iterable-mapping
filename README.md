@@ -30,3 +30,18 @@ argument to `generateKeyIterableMapping`. This command generated `UInt256UInt256
 [success] Total time: 0 s, completed Aug 19, 2019 10:10:12 PM
 ```
 
+### Template
+
+The template file, if you want to fill it out directly, is [here](project/src/main/resources/template.sol).
+
+### Modifications / Apologies
+
+If the template is modified, you'll have to regenerate all the solidity specializations by hand.
+
+The current tests ony test the prototype file `KeyIterableMapping.sol`. To regenerate that from an updated template, try
+
+```
+> generateKeyIterableMapping uint256 uint256 KeyIterableMapping
+[success] Total time: 0 s, completed Aug 19, 2019 10:10:12 PM
+```
+

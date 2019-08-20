@@ -7,8 +7,8 @@ library KeyIterableMapping {
     uint256 value;
   }
   struct Store {
-    mapping(uint256=>Record) map;
-    uint256[]                keys;
+    mapping(uint256=>Record)   map;
+    uint256[]                  keys;
   }
   function keyCount( Store storage store ) internal view returns ( uint256 count ) {
     count = store.keys.length;
