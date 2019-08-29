@@ -1,6 +1,6 @@
 pragma solidity ^0.5.7; 
 
-library AddressUint256KeyIterableMapping {
+library AddressUInt256KeyIterableMapping {
   struct Record {
     bool    exists; // this feels like a waste of storage...
     uint256 index;
