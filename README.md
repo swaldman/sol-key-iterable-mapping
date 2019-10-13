@@ -49,3 +49,11 @@ The current tests ony test the prototype file `KeyIterableMapping.sol`. To regen
 [success] Total time: 0 s, completed Aug 19, 2019 10:10:12 PM
 ```
 
+If your value type is a string or dynamic array, you will have to modify the generated file by hand,
+specifying whether you want `memory` (by copy) or `storage` (by reference) semantics for some
+parameters or return values. `:(`
+
+The safest (though not necessarily the most performant) choice is memory, and if we modify this to
+automatically generate modifiers, that's probably what we'd use.
+
+
